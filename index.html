@@ -1,18 +1,45 @@
 <html>
+<!-- Outer tag should always be an html tag -->
+<!-- head tag - this is not for a header -->
+<!-- the head tag is where you place all of your metadata (don't have to worry about that much), stylesheets, CDNs, script tags -->
 
 <head>
+    <!-- anything that is necessary in the page but isn't an actual element visible on the page -->
+    <title>Foxes78 | HTML&CSS</title> <!-- title tag changes the tab name of the page in your browser -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
+<!-- body tag is where you put all of your actual html elements that will appear on the page -->
+<!-- often you might see the body tag further split into a header section, navbar section, main section, footer section -->
+
 <body>
-    <h1>Hello!</h1>
-    <img src="imgs/fennec-right - Copy.jpg">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laborum autem dolorum ipsum sapiente asperiores
-        aspernatur consectetur, voluptatem a ducimus alias suscipit voluptas quaerat corrupti? Aperiam cupiditate
-        voluptatem neque? Temporibus.</p>
-    <h1>Goodbye!</h1>
-    <h4>This is just the beginning! :)</h4>
-    <img src="imgs/fennec-right - Copy.jpg">
+    <!-- created navbar using emmet abbreviations -->
+    <!-- div of class container with 6 children divs of class nav-item each with a child of a link tag with class navlink 
+        emmet abbreviation: .container>.nav-item*6>a.navlink -->
+    <div class="container">
+        <div class="nav-item"><a href="#" class="navlink">Navlink1</a></div>
+        <div class="nav-item"><a href="#" class="navlink">Navlink2</a></div>
+        <div class="nav-item nav-bigger"><a href="#" class="navlink">Navlink3</a></div>
+        <div class="nav-item"><a href="#" class="navlink">Navlink4</a></div>
+        <div class="nav-item"><a href="#" class="navlink">Navlink5</a></div>
+        <div class="nav-item"><a href="#" class="navlink">Navlink6</a></div>
+    </div>
+    <div class="left-column">
+        <h1 id="topH1">Hello!</h1>
+        <h1 id="topH1">Same Line!</h1>
+        <img id="fennec-img" src="imgs/fennec-right - Copy.jpg">
+    </div>
+    <div class="right-coulmn">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laborum autem dolorum ipsum sapiente
+            asperiores
+            aspernatur consectetur, voluptatem a ducimus alias suscipit voluptas quaerat corrupti? Aperiam cupiditate
+            voluptatem neque? Temporibus.</p>
+        <h1>Goodbye!</h1>
+        <h4>This is just the beginning! :)</h4>
+        <img id="fennec-img" src="imgs/fennec-right - Copy.jpg">
+    </div>
 </body>
+
+
 
 </html>

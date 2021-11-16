@@ -4,3 +4,59 @@ h1 {
 p {
     color: green;
 }
+
+/* select based on a class name -> use a . */
+.left-column {
+    width: 60%;
+}
+
+.right-column {
+    width: 30%
+}
+
+/* selecting based on an id -> use a # */
+#fennec-img {
+    height: auto;
+    max-width: 100%;
+}
+
+#topH1 {
+    display: inline;
+    color: purple;
+}
+
+.posOuter {
+    position: relative;
+    height: 400px;
+    width: 600px;
+    border: 5px solid;
+}
+
+.posInner {
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    top: 100px;
+    right: 20px;
+    border: 5px solid;
+}
+
+/* Flexbox stuff */
+.container {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.nav-item {
+    background-color: moccasin;
+}
+
+.nav-bigger {
+    background-color: olive;
+    flex: 0 0 100px;
+}
